@@ -5,8 +5,12 @@
 cmake_minimum_required(VERSION 3.16)
 
 
-set(EXTRA_COMPONENT_DIRS "./components")
-set(EXTRA_COMPONENT_DIRS "./components/driver")
+set(EXTRA_COMPONENT_DIRS 
+                "./components"
+                "./components/driver"
+                "./components/driver/i2s"
+)
+
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
 project(firephoenix)
